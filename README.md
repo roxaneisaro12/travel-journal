@@ -57,6 +57,8 @@ travel-journal/
 The website focuses on readability, clear visual hierarchy, consistent spacing, and a responsive article-card layout. Destination-specific pages provide visitors with more detailed travel content, while the homepage acts as the main entry point for discovering stories.
 
 ## Links
+- **LIVE WEBSITE LINK:** https://roxaneisaro12.github.io/travel-journal/
+
 
 - **GitHub Repository:** https://github.com/roxaneisaro12/travel-journal.git 
 
