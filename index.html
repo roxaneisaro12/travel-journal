@@ -4,359 +4,382 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ROAM Travel Journal — discover destinations, travel stories, and inspiration for your next adventure.">
-    <title>ROAM — Travel Journal</title>
+    <meta
+        name="description"
+        content="Explore thoughtful travel stories, destination guides, adventures, and practical travel tips with ROAM Travel Journal."
+    >
+    <title>ROAM — A Travel Journal</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
 
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-    <!-- Navigation -->
+<body>
+    <!-- Website header -->
     <header class="site-header">
-        <nav class="navbar">
-            <a href="index.html" class="logo">ROAM<span>.</span></a>
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="ROAM home">
+                ROAM<span>.</span>
+            </a>
 
             <div class="nav-links">
-                <a href="index.html" class="active">Home</a>
-                <a href="#stories">Destinations</a>
-                <a href="#categories">Travel Tips</a>
-                <a href="#about">About</a>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="#stories" class="nav-link">Destinations</a>
+                <a href="#travel-tips" class="nav-link">Travel Tips</a>
+                <a href="#about" class="nav-link">About</a>
             </div>
 
-            <a href="#stories" class="nav-button">Explore Stories</a>
+            <a href="#stories" class="nav-cta">Explore Stories</a>
         </nav>
     </header>
 
     <main>
-        <!-- Hero Banner -->
-        <section class="hero">
+        <!-- Hero section -->
+        <section class="hero" aria-labelledby="hero-title">
             <div class="hero-content">
                 <p class="eyebrow">THE WORLD IS WAITING</p>
 
-                <h1>Find your next<br>great escape.</h1>
+                <h1 id="hero-title">
+                    Find your next<br>
+                    great escape.
+                </h1>
 
                 <p class="hero-description">
-                    Inspiring stories, hidden places, and thoughtful
-                    guides for travelers who want to see the world differently.
+                    Stories, places, and experiences to inspire you
+                    to travel a little further and see the world differently.
                 </p>
 
                 <a href="#stories" class="hero-button">
-                    Discover our stories <span aria-hidden="true">→</span>
+                    Discover our stories
+                    <span aria-hidden="true">&rarr;</span>
                 </a>
             </div>
         </section>
 
-        
-<!-- Categories -->
-<section class="categories" id="categories">
-    <div class="section-heading">
-        <p class="eyebrow-dark">EXPLORE YOUR INTERESTS</p>
-        <h2>Where will you go next?</h2>
-    </div>
-
-    <div class="category-links">
-        <a href="#stories" class="category-link selected">All stories</a>
-        <a href="#stories" class="category-link">Destinations</a>
-        <a href="#stories" class="category-link">Adventure</a>
-        <a href="#stories" class="category-link">Culture</a>
-        <a href="#stories" class="category-link">Travel tips</a>
-    </div>
-</section>
-
-<!-- Travel Stories -->
-<section class="stories" id="stories">
-    <div class="stories-heading">
-        <div>
-            <p class="eyebrow-dark">THE ROAM JOURNAL</p>
-            <h2>Stories worth travelling for.</h2>
-        </div>
-
-        <p class="stories-intro">
-            Thoughtful guides and personal stories to inspire
-            your next adventure.
-        </p>
-    </div>
-
-    <div class="blog-grid">
-
-        <!-- Article 1 -->
-        <article class="blog-card">
-            <a href="article.html" class="card-image">
-                <img
-                    src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=800&q=80"
-                    alt="Lush green African landscape"
-                    loading="lazy"
-                >
-                <span class="image-label">DESTINATIONS</span>
-            </a>
-
-            <div class="card-content">
-                <div class="card-meta">
-                    <span>Rwanda</span>
-                    <span>6 min read</span>
+        <!-- Travel stories section -->
+        <section class="stories" id="stories" aria-labelledby="stories-title">
+            <div class="stories-heading">
+                <div>
+                    <p class="eyebrow-dark">THE ROAM JOURNAL</p>
+                    <h2 id="stories-title">Stories worth travelling for.</h2>
                 </div>
 
-                <h3>
-                    <a href="article.html">
-                        Rwanda: Exploring the Land of a Thousand Hills
-                    </a>
-                </h3>
+                <p class="stories-intro">
+                    Thoughtful guides and personal stories to inspire
+                    your next adventure.
+                </p>
+            </div>
 
-                <p class="card-description">
-                    From rolling green hills to lakeside towns,
-                    discover the beauty of Rwanda.
+            <!-- Category navigation -->
+            <nav class="category-links" aria-label="Story categories">
+                <a href="#stories" class="category-link selected">
+                    All stories
+                </a>
+                <a href="#destinations" class="category-link">
+                    Destinations
+                </a>
+                <a href="#adventure" class="category-link">
+                    Adventure
+                </a>
+                <a href="#culture" class="category-link">
+                    Culture
+                </a>
+                <a href="#travel-tips" class="category-link">
+                    Travel tips
+                </a>
+            </nav>
+
+            <div class="blog-grid">
+                <!-- Story 1: Rwanda -->
+                <article class="blog-card" id="destinations">
+                    <a href="article.html" class="card-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=800&q=80"
+                            alt="Lush green African landscape"
+                            loading="lazy"
+                        >
+                        <span class="image-label">DESTINATIONS</span>
+                    </a>
+
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span>Rwanda</span>
+                            <span>6 min read</span>
+                        </div>
+
+                        <h3>
+                            <a href="article.html">
+                                Rwanda: Exploring the Land of a Thousand Hills
+                            </a>
+                        </h3>
+
+                        <p class="card-description">
+                            From rolling green hills to lakeside towns,
+                            discover the beauty of Rwanda.
+                        </p>
+
+                        <div class="author">
+                            <img
+                                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80"
+                                alt=""
+                                loading="lazy"
+                            >
+                            <div>
+                                <p class="author-name">Amara N.</p>
+                                <p class="article-date">October 10, 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Story 2: Bali -->
+                <article class="blog-card">
+                    <a href="bali.html" class="card-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80"
+                            alt="Tropical scenery in Bali, Indonesia"
+                            loading="lazy"
+                        >
+                        <span class="image-label">DESTINATIONS</span>
+                    </a>
+
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span>Bali, Indonesia</span>
+                            <span>5 min read</span>
+                        </div>
+
+                        <h3>
+                            <a href="bali.html">
+                                Finding Peace Among Bali's Rice Terraces
+                            </a>
+                        </h3>
+
+                        <p class="card-description">
+                            Slow down and discover the quiet beauty
+                            of Bali's green landscapes.
+                        </p>
+
+                        <div class="author">
+                            <img
+                                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80"
+                                alt=""
+                                loading="lazy"
+                            >
+                            <div>
+                                <p class="author-name">Amara N.</p>
+                                <p class="article-date">October 8, 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Story 3: Italy -->
+                <article class="blog-card">
+                    <a href="italy.html" class="card-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=800&q=80"
+                            alt="Colourful Italian coastal village"
+                            loading="lazy"
+                        >
+                        <span class="image-label">CULTURE</span>
+                    </a>
+
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span>Italy</span>
+                            <span>7 min read</span>
+                        </div>
+
+                        <h3>
+                            <a href="italy.html">
+                                A Slow Weekend in the Italian Countryside
+                            </a>
+                        </h3>
+
+                        <p class="card-description">
+                            Enjoy charming villages, local food,
+                            and the art of travelling slowly.
+                        </p>
+
+                        <div class="author">
+                            <img
+                                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80"
+                                alt=""
+                                loading="lazy"
+                            >
+                            <div>
+                                <p class="author-name">Amara N.</p>
+                                <p class="article-date">October 6, 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Story 4: Kyoto -->
+                <article class="blog-card" id="culture">
+                    <a href="kyoto.html" class="card-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80"
+                            alt="Traditional architecture in Kyoto, Japan"
+                            loading="lazy"
+                        >
+                        <span class="image-label">CULTURE</span>
+                    </a>
+
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span>Kyoto, Japan</span>
+                            <span>4 min read</span>
+                        </div>
+
+                        <h3>
+                            <a href="kyoto.html">
+                                Discovering Kyoto's Quiet Streets
+                            </a>
+                        </h3>
+
+                        <p class="card-description">
+                            Explore peaceful temples, traditional streets,
+                            and beautiful Japanese gardens.
+                        </p>
+
+                        <div class="author">
+                            <img
+                                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80"
+                                alt=""
+                                loading="lazy"
+                            >
+                            <div>
+                                <p class="author-name">Amara N.</p>
+                                <p class="article-date">October 4, 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Story 5: Tanzania -->
+                <article class="blog-card" id="adventure">
+                    <a href="tanzania.html" class="card-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80"
+                            alt="African wildlife and open safari landscapes"
+                            loading="lazy"
+                        >
+                        <span class="image-label">ADVENTURE</span>
+                    </a>
+
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span>Tanzania</span>
+                            <span>8 min read</span>
+                        </div>
+
+                        <h3>
+                            <a href="tanzania.html">
+                                An Unforgettable Adventure in the Serengeti
+                            </a>
+                        </h3>
+
+                        <p class="card-description">
+                            Discover wide-open plains, extraordinary wildlife,
+                            and the wonder of a safari.
+                        </p>
+
+                        <div class="author">
+                            <img
+                                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80"
+                                alt=""
+                                loading="lazy"
+                            >
+                            <div>
+                                <p class="author-name">Amara N.</p>
+                                <p class="article-date">October 2, 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Story 6: Travel tips -->
+                <article class="blog-card" id="travel-tips">
+                    <a href="travel-tips.html" class="card-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1553531384-411a247ccd73?auto=format&fit=crop&w=800&q=80"
+                            alt="Travel essentials packed for a journey"
+                            loading="lazy"
+                        >
+                        <span class="image-label">TRAVEL TIPS</span>
+                    </a>
+
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span>Travel tips</span>
+                            <span>3 min read</span>
+                        </div>
+
+                        <h3>
+                            <a href="travel-tips.html">
+                                How to Pack Light for Any Journey
+                            </a>
+                        </h3>
+
+                        <p class="card-description">
+                            Simple packing tips to help you travel lighter
+                            and enjoy more freedom on the road.
+                        </p>
+
+                        <div class="author">
+                            <img
+                                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80"
+                                alt=""
+                                loading="lazy"
+                            >
+                            <div>
+                                <p class="author-name">Amara N.</p>
+                                <p class="article-date">September 30, 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- About ROAM -->
+        <section class="about-section" id="about">
+            <div class="about-content">
+                <p class="eyebrow-dark">A NOTE FROM ROAM</p>
+                <h2>The best journeys stay with you.</h2>
+
+                <p>
+                    ROAM is a travel journal for curious people who want
+                    to experience places thoughtfully. We share personal
+                    stories, practical guides, and inspiration for seeing
+                    the world at your own pace.
                 </p>
 
-                <div class="author">
-                    <img
-                        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80"
-                        alt=""
-                        loading="lazy"
-                    >
-                    <div>
-                        <p class="author-name">Amara N.</p>
-                        <p class="article-date">October 10, 2026</p>
-                    </div>
-                </div>
+                <a href="#stories" class="about-link">
+                    Find your next story
+                    <span aria-hidden="true">&rarr;</span>
+                </a>
             </div>
-        </article>
-
-        <!-- Article 2 -->
-        <article class="blog-card">
-            <a href="article.html" class="card-image">
-                <img
-                    src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80"
-                    alt="Tropical scenery in Bali, Indonesia"
-                    loading="lazy"
-                >
-                <span class="image-label">SLOW TRAVEL</span>
-            </a>
-
-            <div class="card-content">
-                <div class="card-meta">
-                    <span>Bali, Indonesia</span>
-                    <span>5 min read</span>
-                </div>
-
-                <h3>
-                    <a href="article.html">
-                        Finding Peace Among Bali's Rice Terraces
-                    </a>
-                </h3>
-
-                <p class="card-description">
-                    Discover a slower pace of life in Bali's
-                    beautiful green countryside.
-                </p>
-
-                <div class="author">
-                    <img
-                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80"
-                        alt=""
-                        loading="lazy"
-                    >
-                    <div>
-                        <p class="author-name">Daniel K.</p>
-                        <p class="article-date">October 8, 2026</p>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <!-- Article 3 -->
-        <article class="blog-card">
-            <a href="article.html" class="card-image">
-                <img
-                    src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=800&q=80"
-                    alt="Colorful coastal village in Italy"
-                    loading="lazy"
-                >
-                <span class="image-label">CULTURE</span>
-            </a>
-
-            <div class="card-content">
-                <div class="card-meta">
-                    <span>Italy</span>
-                    <span>7 min read</span>
-                </div>
-
-                <h3>
-                    <a href="article.html">
-                        A Slow Weekend in the Italian Countryside
-                    </a>
-                </h3>
-
-                <p class="card-description">
-                    Cobblestone streets, local food, and the joy
-                    of travelling without a schedule.
-                </p>
-
-                <div class="author">
-                    <img
-                        src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=100&q=80"
-                        alt=""
-                        loading="lazy"
-                    >
-                    <div>
-                        <p class="author-name">Sofia M.</p>
-                        <p class="article-date">October 5, 2026</p>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <!-- Article 4 -->
-        <article class="blog-card">
-            <a href="article.html" class="card-image">
-                <img
-                    src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80"
-                    alt="Traditional streets of Kyoto, Japan"
-                    loading="lazy"
-                >
-                <span class="image-label">CITY GUIDES</span>
-            </a>
-
-            <div class="card-content">
-                <div class="card-meta">
-                    <span>Kyoto, Japan</span>
-                    <span>8 min read</span>
-                </div>
-
-                <h3>
-                    <a href="article.html">
-                        Discovering Kyoto's Quiet Streets
-                    </a>
-                </h3>
-
-                <p class="card-description">
-                    Explore traditional neighbourhoods, peaceful
-                    gardens, and Japanese culture.
-                </p>
-
-                <div class="author">
-                    <img
-                        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80"
-                        alt=""
-                        loading="lazy"
-                    >
-                    <div>
-                        <p class="author-name">Amara N.</p>
-                        <p class="article-date">September 29, 2026</p>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <!-- Article 5 -->
-        <article class="blog-card">
-            <a href="article.html" class="card-image">
-                <img
-                    src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80"
-                    alt="Wildlife and open landscapes in Tanzania"
-                    loading="lazy"
-                >
-                <span class="image-label">ADVENTURE</span>
-            </a>
-
-            <div class="card-content">
-                <div class="card-meta">
-                    <span>Tanzania</span>
-                    <span>9 min read</span>
-                </div>
-
-                <h3>
-                    <a href="article.html">
-                        An Unforgettable Adventure in the Serengeti
-                    </a>
-                </h3>
-
-                <p class="card-description">
-                    Experience the wide-open plains and incredible
-                    wildlife of East Africa.
-                </p>
-
-                <div class="author">
-                    <img
-                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80"
-                        alt=""
-                        loading="lazy"
-                    >
-                    <div>
-                        <p class="author-name">Daniel K.</p>
-                        <p class="article-date">September 24, 2026</p>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <!-- Article 6 -->
-        <article class="blog-card">
-            <a href="article.html" class="card-image">
-                <img
-                    src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=800&q=80"
-                    alt="Mountain lake surrounded by scenic landscapes"
-                    loading="lazy"
-                >
-                <span class="image-label">TRAVEL TIPS</span>
-            </a>
-
-            <div class="card-content">
-                <div class="card-meta">
-                    <span>Travel smarter</span>
-                    <span>4 min read</span>
-                </div>
-
-                <h3>
-                    <a href="article.html">
-                        How to Pack Light for Any Journey
-                    </a>
-                </h3>
-
-                <p class="card-description">
-                    Practical packing tips to help you travel
-                    comfortably with less luggage.
-                </p>
-
-                <div class="author">
-                    <img
-                        src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=100&q=80"
-                        alt=""
-                        loading="lazy"
-                    >
-                    <div>
-                        <p class="author-name">Sofia M.</p>
-                        <p class="article-date">September 20, 2026</p>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-    </div>
-</section>
-
-<!-- About -->
-<section class="about-section" id="about">
-    <p class="eyebrow-dark">A NOTE FROM ROAM</p>
-    <h2>The world is bigger than our routines.</h2>
-    <p>
-        ROAM is a travel journal for curious minds, collecting
-        stories and ideas that encourage us to explore new places
-        and experience the world with an open mind.
-    </p>
-</section>
-
-<!-- Footer -->
-<footer class="site-footer">
-    <a href="index.html" class="logo">ROAM<span>.</span></a>
-    <p>Stories for the curious traveler.</p>
-    <p class="copyright">© 2026 ROAM Travel Journal</p>
-</footer>
-
+        </section>
     </main>
 
+    <!-- Website footer -->
+    <footer class="site-footer">
+        <a href="index.html" class="logo">ROAM<span>.</span></a>
+
+        <p>Stories for the curious traveller.</p>
+
+        <p class="footer-copy">
+            &copy; 2026 ROAM Travel Journal. All rights reserved.
+        </p>
+    </footer>
 </body>
 </html>
