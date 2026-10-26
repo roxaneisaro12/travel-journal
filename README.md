@@ -27,7 +27,7 @@ ROAM Travel Journal is a travel-focused blog website featuring destination artic
 
 ## Project Structure
 
-```text
+
 travel-journal/
 ├── index.html
 ├── style.css
@@ -37,15 +37,14 @@ travel-journal/
 ├── tanzania.html
 ├── travel-tips.html
 └── README.md
-```
+
 
 ## Getting Started
 
 1. Clone the repository:
 
-   ```bash
-   git clone YOUR_GITHUB_REPOSITORY_URL
-   ```
+   git clone https://github.com/roxaneisaro12/travel-journal.git
+   
 
 2. Open the project folder in Visual Studio Code.
 
@@ -59,6 +58,6 @@ The website focuses on readability, clear visual hierarchy, consistent spacing, 
 
 ## Links
 
-- **Live Website:** YOUR_LIVE_WEBSITE_URL
-- **GitHub Repository:** YOUR_GITHUB_REPOSITORY_URL
+- **GitHub Repository:** https://github.com/roxaneisaro12/travel-journal.git 
+
 
