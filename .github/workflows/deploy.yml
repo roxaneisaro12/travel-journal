@@ -1,0 +1,66 @@
+
+name: Deploy ROAM Travel Journal
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get repository files
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: tailwind/package-lock.json
+
+      - name: Install Tailwind dependencies
+        run: npm ci
+        working-directory: tailwind
+
+      - name: Build Tailwind website
+        run: npm run build
+        working-directory: tailwind
+
+      - name: Prepare both website versions
+        run: |
+          mkdir -p _site/tailwind
+
+          cp index.html style.css article.html bali.html italy.html kyoto.html tanzania.html travel-tips.html _site/
+
+          cp -R tailwind/dist/. _site/tailwind/
+
+      - name: Upload website files
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Publish website
+        id: deployment
+        uses: actions/deploy-pages@v4
